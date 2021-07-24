@@ -12,7 +12,7 @@ function preload() {
 	starImg = loadImage("images/star.png");
 	bgImg = loadImage("images/starNight.png");
 	//load animation for fairy here
-	fairyImg = loadAnimation("images/fairyImage1.png","images/fairyImages2.png");
+	fairyImg = loadAnimation("images/fairyImage1.png","images/fairyImage2.png");
 	fairySound = loadSound("sound/JoyMusic.mp3");
 }
 
@@ -51,7 +51,7 @@ function draw() {
 
   //write code to stop star in the hand of fairy
   if (star.y > 470 && starBody.position.y > 470){
-	  Matter.Body.setStaic(starBody,true);
+	  Matter.Body.setStatic(starBody,true);
   }
 
   drawSprites();
